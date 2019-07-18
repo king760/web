@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <style>
+            body{background-color: rgb(59, 51, 51)}
+            font-family:arial 
+        </style>
+    </head>
+    <body>
+        <h1><center>bienvenidos a la lista de tareas</center></h1>
+        <h2>aca van a ir las tarea</h2>
+        <center>
+        <p> esto es un parrafo</p>
+        <img src="https://www.laguiadelvaron.com/wp-content/uploads/2015/09/Loca-teor%C3%ADa-sobre-Los-Simpson.jpg" alt="esto es una pagina">
+        <center>
+        <p>hola soy {{nombre}} y tengo {{edad}} </p>
+        <h1>mis hobbies son </h1>
+        {% for tarea in lista_tareas %}
+            <li><center>{{tarea.titulo }}</center> </li>
+        {%endfor%}
+    </body>
+</html>
